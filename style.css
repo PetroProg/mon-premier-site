@@ -18,13 +18,35 @@ body{
 .aheader{
     text-decoration: none;
     color: white;
-    font-family:cursive;
-    background-color: #885c5a;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid white;
 }
 #sec1{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/media/img/fraises.jpeg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(25, 136, 247, 0.85);
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal;
+}
+
+
+
+
+#sec2{
     background-color:  #ae3836 ;
     color: white;
 }
