@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="page-detail-1.html">Variété des fraises</a>
+                </li>
+                <li>
+                    <a href="page-detail-2.html">La mariguette</a>
+                </li>
+                <li>
+                    <a href="page-detail-3.html">La cléry</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h1>
+        Contactez-nous
+    </h1>
+    <p>
+        Utilisez ce formulaire pour commander vos barquettes de fraises préférées ou simplement pour nous envoyer un message.&#x1F353 
+    </p>
+    <form>
+        <p>
+            <label for="surname">Nom *</label>
+            <input type="text" id="surname" name="surname">
+        </p>
+        <p>
+            <label for="name">Prénom *</label>
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            <label for="street">Adresse *</label>
+            <input type="text" id="street" name="street">
+        </p>
+        <p>
+            <label for="city">Lieu *</label>
+            <input type="text" id="city" name="city">
+        </p>
+        <p>
+            <label for="npa"> N° postale (NPA) *</label>
+            <input type="text" id="npa" name="npa">
+        </p>
+
+       <fieldset>            
+            <legend>Votre commande</legend>
+                Barquette de fraise désirée :<br>
+                    <input type="checkbox" id="gariguette" name="gariguette"> 
+                        <label for="gariguette">
+                            La gariguette
+                        </label>
+                    <input type="checkbox" id="mariquette" name="mariquette">
+                        <label for="mariquette">
+                            La mariquette
+                        </label>
+                    <input type="checkbox" id="clerly" name="clerly">
+                        <label for="clerly">
+                            La mariquette
+                        </label>  
+
+                <p>
+                    <label for="quantite">
+                        Quantité *
+                    </label>      
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select> 
+                </p>
+
+                <fieldset>
+                    <legend>Mode de paiement</legend>
+
+                    <input type="radio" name="Mode" id="payement">
+                    <label for="payement">Payement à la livraison</label>
+
+                    <input type="radio" name="Mode" id="carte">
+                    <label for="carte">Carte bancaire</label>
+
+                    <input type="radio" name="Mode" id="paypal">
+                    <label for="paypal">PayPal</label>
+
+                </fieldset>
+
+                <br>
+                <label for="message-id">Message</label>
+                <textarea rows="5" id="message-id" name="message"></textarea>
+               
+                <br><br>
+                <input type="checkbox" id="condition" name="condition"> 
+                        <label for="condition">
+                            J'accepte les conditions générales *
+                        </label>
+                
+                <br><br><button type="submit">Envoyer</button>
+       </fieldset> 
+    </form>
+    </main>
+    <footer>
+        <div>© 2021 - Tous droits réservées</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="mentions-legales.html">Mentions Légales</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="https://www.etml.ch/">ETML</a>
+                </li>
+                <li>
+                    <a href="mailto:mon-email@eduvaud.ch">mon-email@eduvaud.ch</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
