@@ -11,7 +11,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 60px;
-    gap: 20px;
+    gap: 2%;
     margin: 0; 
     padding: 0;     
 }
@@ -25,6 +25,7 @@ body{
     padding: 10px;
     border-radius: 5px;
     border: 1px solid white;
+
 }
 #sec1{
     display: flex;
@@ -36,19 +37,58 @@ body{
     justify-content: center;
     height: 350px;
     color: white;
-    text-shadow: 3px 3px 5px rgba(25, 136, 247, 0.85);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.85);
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-weight: 5;
     font-style: normal;
+    font-size: 25px;
 }
-
-
-
-
 #sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color:  #ae3836 ;
     color: white;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+#h2{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal;
+    font-size: 30px;
+}
+#p1{
+    font-size: 20px ;
+}
+#ul1{
+    display: flex;
+    font-size: 25px;
+    list-style: none;  
+}
+#li1{
+    border-radius: 20px;
+    background-color:#6a3c3a;
+    margin-right: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+#sec3{
+    background-color:azure;
+    border: 1px solid #6a3c3a;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    border-radius: 30px;
 }
 
 
