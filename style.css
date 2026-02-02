@@ -18,9 +18,9 @@ body{
 .aheader{
     text-decoration: none;
     color: white;
-    font-family: "Orbitron", sans-serif;
+    font-family: Orbitron, Arial, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 5;
+    font-weight: 500;
     font-style: normal;
     padding: 10px;
     border-radius: 5px;
@@ -63,6 +63,9 @@ body{
     font-weight: 5;
     font-style: normal;
     font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 #p1{
     font-size: 20px ;
@@ -89,10 +92,31 @@ body{
     margin-right: 100px;
     margin-bottom: 20px;
     border-radius: 30px;
+}
+
+.list-taille{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.list-taille>div{
+    border: 10px solid #d6c8c7;
+    border-radius: 5px;
+}
+.list-taille>div>div{
+    border: 1px solid #866966;
+    border-radius: 5px;
+    margin: -1px;
+}
+.titre{
+    position: absolute;
+    background-color: #afb59a;
+    font-size: 40px;
+    opacity: 80%;
+    border-radius: 1%;
+}
+.list-taille>div>div>div{
+    background-color: #ae3836;
 }
 
 
