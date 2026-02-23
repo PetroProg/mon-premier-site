@@ -204,7 +204,6 @@ p {
   margin-block-start: 10px;
 }
 form > div > p {
-  font-size: 20px;
   padding-left: 10px;
   
   display: grid;
@@ -348,5 +347,19 @@ fieldset > div > p > select {
   #sec2 > nav > ul{
     flex-direction: column;
     gap: 10px;
+  }
+  #form-contact{
+    font-size: 14px;
+  }
+  form > div > p > input{
+    width: 170px;
+  }
+  .field-contact > fieldset{
+    display: flex;
+    flex-direction: row;
+  }
+  .field-contact > fieldset > div{
+    display: flex;
+    flex-direction: column;
   }
 }

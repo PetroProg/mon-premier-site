@@ -38,7 +38,7 @@
     <p class="p">
         Utilisez ce formulaire pour commander vos barquettes de fraises préférées ou simplement pour nous envoyer un message.&#x1F353 
     </p>
-    <form action="/page-detail-3" method="POST">
+    <form id="form-contact" action="/page-detail-3" method="POST">
         <div>
             <p>
                 <label for="surname">Nom *</label>
@@ -94,15 +94,17 @@
 
                 <fieldset class="field-contact">
                     <legend>Mode de paiement</legend>
+                    <div>
+                        <input type="radio" name="Mode" id="payement">
+                        <label for="payement">Payement à la livraison</label>
 
-                    <input type="radio" name="Mode" id="payement">
-                    <label for="payement">Payement à la livraison</label>
+                        <input type="radio" name="Mode" id="carte">
+                        <label for="carte">Carte bancaire</label>
 
-                    <input type="radio" name="Mode" id="carte">
-                    <label for="carte">Carte bancaire</label>
-
-                    <input type="radio" name="Mode" id="paypal">
-                    <label for="paypal">PayPal</label>
+                        <input type="radio" name="Mode" id="paypal">
+                        <label for="paypal">PayPal</label>
+                    </div>
+                    
 
                 </fieldset>
 
