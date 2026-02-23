@@ -246,7 +246,15 @@ form > div > p > input:focus{
   text-align: start;
   margin-block-end: 5px;
 }
-
+fieldset > div > p > select {
+  width: 30px;
+  height: 30px;
+  margin-left: 85px;
+}
+.select{
+  padding: 10px;
+}
+ 
 /* LAPTOP et en-dessous */
 @media screen and (max-width: 1279px) {
   #sec1 {
