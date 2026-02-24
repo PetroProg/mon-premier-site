@@ -68,21 +68,21 @@
                     <p>Barquette de fraise désirée :</p>
                     <div>
                         <label for="gariguette"> La gariguette </label>
-                        <input type="checkbox" id="gariguette" name="gariguette"> 
+                        <input type="checkbox" id="gariguette" name="Fraise[]" value="gariguette"> 
                     </div>
                     <div>
                         <label for="mariquette"> La mariquette </label>
-                        <input type="checkbox" id="mariquette" name="mariquette">
+                        <input type="checkbox" id="mariquette" name="Fraise[]" value="mariquette">
                     </div>
                     <div>
                         <label for="clerly">La mariquette</label>  
-                        <input type="checkbox" id="clerly" name="clerly">
+                        <input type="checkbox" id="clerly" name="Fraise[]" value="clerly">
                     </div>
                 <p class="select">
                     <label for="quantite">
                         Quantité *
                     </label>      
-                    <select>
+                    <select name="Quantité" id="quantite">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -95,30 +95,36 @@
                 <fieldset class="field-contact">
                     <legend>Mode de paiement</legend>
                     <div>
-                        <input type="radio" name="Mode" id="payement">
-                        <label for="payement">Payement à la livraison</label>
-
-                        <input type="radio" name="Mode" id="carte">
-                        <label for="carte">Carte bancaire</label>
-
-                        <input type="radio" name="Mode" id="paypal">
-                        <label for="paypal">PayPal</label>
+                        <div>
+                            <input type="radio" name="Mode" id="payement" value="carte">
+                            <label for="payement">Payement à la livraison</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="Mode" id="carte" value="carte">
+                            <label for="carte">Carte bancaire</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="Mode" id="paypal" value="paypal">
+                            <label for="paypal">PayPal</label>
+                        </div>
                     </div>
                     
 
                 </fieldset>
 
-                <br>
-                <label for="message-id">Message</label>
-                <textarea rows="5" id="message-id" name="message"></textarea>
+                <div id="message">
+                    <label for="message-id">Message</label>
+                    <textarea rows="5" id="message-id" name="message"></textarea>
+                </div>
                
-                <br><br>
+               
                 <input type="checkbox" id="condition" name="condition"> 
                         <label for="condition">
                             J'accepte les conditions générales *
                         </label>
-                
-                <br><br><button type="submit">Envoyer</button>
+                <div id="envoyer">
+                    <button type="submit">Envoyer</button>
+                </div>
        </fieldset> 
     </form>
     </main>

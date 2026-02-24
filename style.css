@@ -180,6 +180,9 @@ p {
   font-weight: bold;
   font-size: 15px;
 }
+label{
+  cursor: pointer;
+}
 /*                      Page du CONTACT                      */
 #main-contact{
   border: 5px solid #d88080;
@@ -217,7 +220,7 @@ form > div > p > input{
   border-radius: 15px;
   border-color: rgb(255, 0, 0);
 }
-form > div > p > input:focus{
+form > div > p > input{
   border-color: rgb(255, 0, 0);
   outline: none;
 }
@@ -234,6 +237,7 @@ form > div > p > input:focus{
 #barquette > div > input{
   transform:scale(2,2);
   border: 3px solid rgb(255, 0, 0);
+  cursor: pointer;
 }
 .commande{
   font-size: 26px;
@@ -246,13 +250,46 @@ form > div > p > input:focus{
   margin-block-end: 5px;
 }
 fieldset > div > p > select {
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 25px;
   margin-left: 85px;
+  cursor: pointer;
+  text-align: center;
 }
 .select{
   padding: 10px;
 }
+  #message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #message-id{
+    transform: scale(1.5, 0.8);
+    border: groove rgb(255, 0, 0);
+    border-radius: 8px;
+    outline: none;
+  }
+  #envoyer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 10px;
+  }
+  #envoyer > button{
+    background-color: #bc8e8d;
+    border: 2px solid #ee1b0c;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px; 
+    transition-duration: 0.3s;
+    font-family: "Sancreek", serif;
+  }
+  #envoyer > button:hover{
+    background-color: #bc8e8d60;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+    border: 2px outset #ee1b0c;
+  }
  
 /* LAPTOP et en-dessous */
 @media screen and (max-width: 1279px) {
@@ -361,5 +398,36 @@ fieldset > div > p > select {
   .field-contact > fieldset > div{
     display: flex;
     flex-direction: column;
+  }
+  #message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #message-id{
+    transform: scale(1.5, 0.8);
+    border: groove rgb(255, 0, 0);
+    border-radius: 8px;
+    outline: none;
+  }
+  #envoyer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 10px;
+  }
+  #envoyer > button{
+    background-color: #bc8e8d;
+    border: 2px solid #ee1b0c;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px; 
+    transition-duration: 0.3s;
+    font-family: "Sancreek", serif;
+  }
+  #envoyer > button:hover{
+    background-color: #bc8e8d60;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+    border: 2px outset #ee1b0c;
   }
 }
