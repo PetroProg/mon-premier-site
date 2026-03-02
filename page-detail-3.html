@@ -1,59 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
-    <link rel="stylesheet" type="text/css" href="style1.css"/>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+  </head>
+  <body>
     <header>
-        <div id="div-logo">
-            <img id="logo" src="media/img/logo.png" alt="Mon logo"/>
-            <p><strong>HEADER</strong></p>
-        </div>
-        <div id="div-avatar">
-            <nav>
-                <ul id="list-header">
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <img id="avatar" src="media/img/avatar.png" alt="Mon avatar"/>
-        </div>
+      <div id="div-logo">
+        <img id="logo" src="media/img/logo.png" alt="Mon logo" />
+        <p><strong>HEADER</strong></p>
+      </div>
+      <div id="div-avatar">
+        <nav>
+          <ul id="list-header">
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <img id="avatar" src="media/img/avatar.png" alt="Mon avatar" />
+      </div>
     </header>
-    
+    <aside>
+      <p><strong>SIDEBAR</strong></p>
+    </aside>
     <main>
-        <aside>
-            <p><strong>SIDEBAR</strong></p>
-        </aside>
+      <div>
         <section id="sec1">
-            <p><strong>CONTENT 1</strong></p>
+          <p><strong>CONTENT 1</strong></p>
         </section>
-        <section>
+        <section id="sec2">
+          <p><strong>CONTENT 2</strong></p>
+        </section>
+      </div>
 
-        </section>
-        <section>
-
-        </section>
+      <section id="sec3">
+        <div class="photo">
+          <img id="mont" src="media/img/matterhorn.jpg" alt="Matterhorn" />
+          <div>
+                <img src="media/img/logo.png" alt="Mon logo" />
+                <img src="media/img/logo.png" alt="Mon logo" />
+                <img src="media/img/logo.png" alt="Mon logo" />
+          </div>
+        </div>
+        <div class="info">
+          <h4><strong>INFO BOX</strong></h4>
+          <p>Texte d'information</p>
+        </div>
+      </section>
     </main>
     <footer>
-        <div id="contact">
-            <p>Contactez-nous</p>
-            <div>
-                <img id="email" src="media/img/email.png" alt="email"/>
-                <a href="mailto:contact@email.com">contact@email.com</a>
-            </div>
+      <div id="contact">
+        <p>Contactez-nous</p>
+        <div>
+          <img id="email" src="media/img/email.png" alt="email" />
+          <a href="mailto:contact@email.com">contact@email.com</a>
         </div>
-        
-        <div id="suivre">
-            <p>Suivez-nous</p>
-            <div>
-                <img id="facebook" src="media/img/facebook.png" alt="facebook"/>
-                <img id="twitter" src="media/img/twitter.png" alt="twitter"/>
-            </div>
+      </div>
+
+      <div id="suivre">
+        <p>Suivez-nous</p>
+        <div>
+          <img id="facebook" src="media/img/facebook.png" alt="facebook" />
+          <img id="twitter" src="media/img/twitter.png" alt="twitter" />
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

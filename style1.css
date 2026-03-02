@@ -5,165 +5,286 @@ body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
+  gap: 10px;
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+
+
+header {
+  background-color: orange;
+
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+}
+#avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  justify-self: end;
+}
+#logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  background-color: white;
+}
+#div-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+
+  gap: 20%;
+  margin-left: 30px;
+}
+#div-avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+
+  gap: 20%;
+  margin-right: 30px;
+}
+#div-logo p {
+  color: white;
+  font-size: 28px;
+}
+#list-header {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 30%;
+  margin-right: 100px;
+}
+#list-header li a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
 }
 
 
 
 
+footer {
+  background-color: red;
 
-header{
-    background-color: orange;
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    width: 100%;
-    border-radius: 10px;
-    height: 150px;
+  border-radius: 10px;
+  height: 200px;
 }
-#avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    justify-self: end;
+  margin: 10px;
+  border-right: 1px solid rgb(156, 129, 129);
 }
-#logo{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-#div-logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    
-    gap: 20%;
-    margin-left: 30px;
-}
-#div-avatar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
+#suivre {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 
-    gap: 20%;
-    margin-right: 30px;
-}
-#div-logo > p{
-    color: white;
-    font-size: 28px;
-}
-#list-header{
-    list-style: none;
-
-    display: flex;
-    flex-direction: row;
-    
-    gap: 30%;
-    margin-right: 100px;
-}
-#list-header > li > a{
-    text-decoration: none;
-    color: white;
-    font-size: 28px;
-}
-
-
-
-
-footer{
-    background-color: red;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    
-    border-radius: 10px;
-    margin-top: 10px;
-    height: 200px;
+  padding-left: 30%;
 }
 #email {
-    width: 50px;
+  width: 50px;
 }
-#facebook{
-    width: 50px;
+#facebook {
+  width: 50px;
 }
-#twitter{
-    border-radius: 50%;
-    width: 50px;
+#twitter {
+  border-radius: 50%;
+  width: 50px;
 }
-#contact > p{
-    font-size: 24px;
-    padding-bottom: 10px;
-    padding-right: 100px;
+#contact > p {
+  font-size: 24px;
+  padding-bottom: 10px;
+  padding-right: 100px;
 
-    border-bottom: 2px solid rgb(252, 137, 137);
-    color: white;
+  border-bottom: 2px solid rgb(252, 137, 137);
+  color: white;
 }
-#contact > div >a{
-    text-decoration: none;
-    color: white;
+#contact > div > a {
+  text-decoration: none;
+  color: white;
 }
-#contact > div{
+#contact > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10%;
+}
+#suivre > p {
+  font-size: 24px;
+  padding-bottom: 10px;
+  padding-right: 200px;
+
+  color: white;
+  border-bottom: 2px solid rgb(252, 137, 137);
+}
+#suivre > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+
+  gap: 8%;
+}
+
+
+
+
+
+main {
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+  gap: 1%;
+}
+main div{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    gap: 10%;
+    height: 50%;
+    gap: 0.5%;
 }
-#suivre > p{
-    font-size: 24px;
-    padding-bottom: 10px;
-    padding-right: 200px;
 
-    color: white;
-    border-bottom: 2px solid rgb(252, 137, 137);
+
+
+
+aside {
+  background-color: blue;
+
+  border-radius: 10px;
+  height: 100%;
+
+  grid-area: sidebar;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-#suivre > div{
+aside > p {
+  color: white;
+  font-size: 28px;
+}
+
+
+
+
+#sec1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+
+  font-size: 28px;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+}
+#sec2 {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  color: white;
+  background-color: purple;
+  border-radius: 10px;
+}
+#sec3{
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
+    height: 50%;
+    padding: 1%;
 
-    gap: 8%;
-}
-
-
-
-
-
-main{
-    margin-top: 10px;
-    height: 600px;
-    
-    display: grid;
-}
-main > aside{
-    background-color: blue;
-
-    width: 20%;
+    background-color:#e1dfe4;
     border-radius: 10px;
-    height: 100%;
+
+    gap: 2%;
+}
+.photo{
+    background-color: #949da4;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    width: 40%;
+    height: auto;
+
+    border-radius: 10px;
+}
+.photo img{
+    height: 60%;
+    padding: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-main > aside > p{
+
+    width: 60%;
+    height: auto;
+
+    background-color:#119fa3;
+    border-radius: 10px;
+
     color: white;
-    font-size: 28px;
 }
-
-
-#sec1{
+.photo div {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+    height: 120px;
+
+
+    gap: 5%;
+}
+.photo div img{
+    background-color: white;
+    border-radius: 50%;
+}
+.info h4{
+    font-size: 28px;
+    padding: 0 100px 10px 100px;
+    margin-block-end: 0;
+    
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.info p{
+    font-size: 22px;
 }
