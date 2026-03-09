@@ -74,7 +74,7 @@ header {
   display: flex;
   flex-direction: row;
 
-  gap: 30%;
+  gap: 20%;
   margin-right: 100px;
 }
 #list-header li a {
@@ -82,7 +82,10 @@ header {
   color: white;
   font-size: 28px;
 }
-
+.head{
+  display: flex;
+  width: 200px;
+}
 
 
 

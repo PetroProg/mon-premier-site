@@ -26,7 +26,7 @@ header div {
     gap: 50px;
 }
 
-header div div {
+header div > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +35,10 @@ header div div {
     border-radius: 50%;
     height: 76px;
     width: 76px;
+}
+header div a{
+    text-decoration: none;
+    color: #000000;
 }
 
 header p {

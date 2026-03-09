@@ -1,132 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Orbitron:wght@400..900&family=Sancreek&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Orbitron:wght@400..900&family=Sancreek&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul id="listheader">
-                <li>
-                    <a class="aheader" href="index.html">Accueil</a>
-                </li>
-                <li>
-                    <a class="aheader" href="page-detail-1.html">Variété des fraises</a>
-                </li>
-                <li>
-                    <a class="aheader" href="page-detail-2.html">La mariguette</a>
-                </li>
-                <li>
-                    <a class="aheader" href="page-detail-3.html">La cléry</a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul id="listheader">
+          <li>
+            <a class="aheader" href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a class="aheader" href="page-detail-1.html">Variété des fraises</a>
+          </li>
+          <li>
+            <a class="aheader" href="page-detail-2.html">Grid Layout</a>
+          </li>
+          <li>
+            <a class="aheader" href="page-detail-3.html">Profil</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main id="main-contact">
-    <h1 id="h1">
-        Contactez-nous
-    </h1>
-    <p class="p">
-        Utilisez ce formulaire pour commander vos barquettes de fraises préférées ou simplement pour nous envoyer un message.&#x1F353;
-    </p>
-    <form id="form-contact" action="/page-detail-3" method="POST">
+      <h1 id="h1">Contactez-nous</h1>
+      <p class="p">
+        Utilisez ce formulaire pour commander vos barquettes de fraises
+        préférées ou simplement pour nous envoyer un message.&#x1F353;
+      </p>
+      <form id="form-contact" action="/page-detail-3" method="POST">
         <div>
-            <p>
-                <label for="surname">Nom *</label>
-                <input type="text" id="surname" name="surname" placeholder="Entrez votre nom . . .">
-            </p>
-            <p>
-                <label for="name">Prénom *</label>
-                <input type="text" id="name" name="name" placeholder="Entrez votre prénom . . .">
-            </p>
-            <p>
-                <label for="street">Adresse *</label>
-                <input type="text" id="street" name="street" placeholder="Entrez votre rue . . .">
-            </p>
-            <p>
-                <label for="city">Lieu *</label>
-                <input type="text" id="city" name="city" placeholder="Entrez votre ville . . .">
-            </p>
-            <p>
-                <label for="npa"> N° postale (NPA) *</label>
-                <input type="text" id="npa" name="npa" placeholder="Entrez votre NPA . . .">
-            </p>
+          <p>
+            <label for="surname">Nom *</label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Entrez votre nom . . ."
+            />
+          </p>
+          <p>
+            <label for="name">Prénom *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Entrez votre prénom . . ."
+            />
+          </p>
+          <p>
+            <label for="street">Adresse *</label>
+            <input
+              type="text"
+              id="street"
+              name="street"
+              placeholder="Entrez votre rue . . ."
+            />
+          </p>
+          <p>
+            <label for="city">Lieu *</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Entrez votre ville . . ."
+            />
+          </p>
+          <p>
+            <label for="npa"> N° postale (NPA) *</label>
+            <input
+              type="text"
+              id="npa"
+              name="npa"
+              placeholder="Entrez votre NPA . . ."
+            />
+          </p>
         </div>
 
-       <fieldset class="field-contact">                       
-               <div id="barquette">
-                    <span class="commande">Votre commande</span>
-                    <p>Barquette de fraise désirée :</p>
-                    <div>
-                        <label for="gariguette"> La gariguette </label>
-                        <input type="checkbox" id="gariguette" name="Fraise[]" value="gariguette"> 
-                    </div>
-                    <div>
-                        <label for="mariquette"> La mariquette </label>
-                        <input type="checkbox" id="mariquette" name="Fraise[]" value="mariquette">
-                    </div>
-                    <div>
-                        <label for="clerly">La mariquette</label>  
-                        <input type="checkbox" id="clerly" name="Fraise[]" value="clerly">
-                    </div>
-                <p class="select">
-                    <label for="quantite">
-                        Quantité *
-                    </label>      
-                    <select name="Quantité" id="quantite">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select> 
-                </p>
-               </div>
+        <fieldset class="field-contact">
+          <div id="barquette">
+            <span class="commande">Votre commande</span>
+            <p>Barquette de fraise désirée :</p>
+            <div>
+              <label for="gariguette"> La gariguette </label>
+              <input
+                type="checkbox"
+                id="gariguette"
+                name="Fraise[]"
+                value="gariguette"
+              />
+            </div>
+            <div>
+              <label for="mariquette"> La mariquette </label>
+              <input
+                type="checkbox"
+                id="mariquette"
+                name="Fraise[]"
+                value="mariquette"
+              />
+            </div>
+            <div>
+              <label for="clerly">La mariquette</label>
+              <input
+                type="checkbox"
+                id="clerly"
+                name="Fraise[]"
+                value="clerly"
+              />
+            </div>
+            <p class="select">
+              <label for="quantite"> Quantité * </label>
+              <select name="Quantité" id="quantite">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </p>
+          </div>
 
-                <fieldset class="field-contact">
-                    <legend>Mode de paiement</legend>
-                    <div>
-                        <div>
-                            <input type="radio" name="Mode" id="payement" value="carte">
-                            <label for="payement">Payement à la livraison</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="Mode" id="carte" value="carte">
-                            <label for="carte">Carte bancaire</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="Mode" id="paypal" value="paypal">
-                            <label for="paypal">PayPal</label>
-                        </div>
-                    </div>
-                    
+          <fieldset class="field-contact">
+            <legend>Mode de paiement</legend>
+            <div>
+              <div>
+                <input type="radio" name="Mode" id="payement" value="carte" />
+                <label for="payement">Payement à la livraison</label>
+              </div>
+              <div>
+                <input type="radio" name="Mode" id="carte" value="carte" />
+                <label for="carte">Carte bancaire</label>
+              </div>
+              <div>
+                <input type="radio" name="Mode" id="paypal" value="paypal" />
+                <label for="paypal">PayPal</label>
+              </div>
+            </div>
+          </fieldset>
 
-                </fieldset>
+          <div id="message">
+            <label for="message-id">Message</label>
+            <textarea rows="5" id="message-id" name="message"></textarea>
+          </div>
 
-                <div id="message">
-                    <label for="message-id">Message</label>
-                    <textarea rows="5" id="message-id" name="message"></textarea>
-                </div>
-               
-               
-                <input type="checkbox" id="condition" name="condition"> 
-                        <label for="condition">
-                            J'accepte les conditions générales *
-                        </label>
-                <div id="envoyer">
-                    <button type="submit">Envoyer</button>
-                </div>
-       </fieldset> 
-    </form>
+          <input type="checkbox" id="condition" name="condition" />
+          <label for="condition"> J'accepte les conditions générales * </label>
+          <div id="envoyer">
+            <button type="submit">Envoyer</button>
+          </div>
+        </fieldset>
+      </form>
     </main>
     <footer>
       <nav>
@@ -147,5 +185,5 @@
       </nav>
       <div>© 2021 - Tous droits réservées</div>
     </footer>
-</body>
+  </body>
 </html>
