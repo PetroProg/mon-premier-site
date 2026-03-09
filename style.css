@@ -19,7 +19,6 @@ header {
   text-decoration: none;
   color: white;
   font-family: Orbitron, Arial, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   padding: 10px;
@@ -89,7 +88,6 @@ p {
   color: white;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.85);
   font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 5;
   font-style: normal;
   font-size: 25px;
@@ -130,7 +128,6 @@ p {
 }
 .class-h {
   font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 5;
   font-style: normal;
   font-size: 30px;
