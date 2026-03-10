@@ -25,7 +25,7 @@ header {
   border-radius: 5px;
   border: 1px solid white;
 }
-.aheader:hover{
+.aheader:hover {
   color: rgb(255, 0, 179);
 }
 footer {
@@ -72,8 +72,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   text-align: center;
 }
 #sec1 {
@@ -107,7 +106,7 @@ p {
 #sec2 > p {
   font-size: 20px;
 }
-#sec2 > nav{
+#sec2 > nav {
   width: 100%;
 }
 #sec2 > nav > ul {
@@ -119,7 +118,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
-}  
+}
 #sec2 > nav > ul > li {
   border-radius: 20px;
   background-color: #6a3c3a;
@@ -177,11 +176,11 @@ p {
   font-weight: bold;
   font-size: 15px;
 }
-label{
+label {
   cursor: pointer;
 }
 /*                      Page du CONTACT                      */
-#main-contact{
+#main-contact {
   border: 5px solid #d88080;
   margin: 25px 25px;
   padding: 0 25px;
@@ -190,8 +189,10 @@ label{
   font-family: "Sancreek", serif;
   font-weight: 400;
   font-style: normal;
+
+  width: 800px;
 }
-#h1{
+#h1 {
   margin-block-start: 40px;
   margin-block-end: 10px;
 
@@ -200,43 +201,43 @@ label{
   font-weight: 400;
   font-style: normal;
 }
-.p{
+.p {
   margin-block-start: 10px;
 }
-form > div > p {
+form > .form-cont > p {
   padding-left: 10px;
-  
+
   display: grid;
   grid-template-columns: auto 0fr;
-  justify-items: start;          
+  justify-items: start;
   max-width: 600px;
 }
-form > div > p > input{
+form > div > p > input {
   width: 300px;
   background-color: #ffffff50;
   border-radius: 15px;
   border-color: rgb(255, 0, 0);
 }
-form > div > p > input{
+form > div > p > input {
   border-color: rgb(255, 0, 0);
   outline: none;
 }
-.field-contact{
+.field-contact {
   border: none;
 }
-#barquette > div{
+#barquette > div {
   display: grid;
   grid-template-columns: auto 0fr;
-  justify-items: start;          
+  justify-items: start;
   max-width: 250px;
   padding: 10px;
 }
-#barquette > div > input{
-  transform:scale(2,2);
+#barquette > div > input {
+  transform: scale(2, 2);
   border: 3px solid rgb(255, 0, 0);
   cursor: pointer;
 }
-.commande{
+.commande {
   font-size: 26px;
   display: flex;
   justify-content: center;
@@ -253,41 +254,56 @@ fieldset > div > p > select {
   cursor: pointer;
   text-align: center;
 }
-.select{
+.select {
   padding: 10px;
 }
-  #message{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #message-id{
-    transform: scale(1.5, 0.8);
-    border: groove rgb(255, 0, 0);
-    border-radius: 8px;
-    outline: none;
-  }
-  #envoyer{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-top: 10px;
-  }
-  #envoyer > button{
-    background-color: #bc8e8d;
-    border: 2px solid #ee1b0c;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 10px 20px; 
-    transition-duration: 0.3s;
-    font-family: "Sancreek", serif;
-  }
-  #envoyer > button:hover{
-    background-color: #bc8e8d60;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
-    border: 2px outset #ee1b0c;
-  }
- 
+#message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#message-id {
+  transform: scale(1.5, 0.8);
+  border: groove rgb(255, 0, 0);
+  border-radius: 8px;
+  outline: none;
+}
+#envoyer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 10px;
+}
+#envoyer > input {
+  background-color: #bc8e8d;
+  border: 2px solid #ee1b0c;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition-duration: 0.3s;
+  font-family: "Sancreek", serif;
+}
+#envoyer > button:hover {
+  background-color: #bc8e8d60;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  border: 2px outset #ee1b0c;
+}
+#result {
+  margin: 10px;
+  width: 400px;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+
+  text-align: start;
+}
+#section-res{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* LAPTOP et en-dessous */
 @media screen and (max-width: 1279px) {
   #sec1 {
@@ -378,53 +394,53 @@ fieldset > div > p > select {
     width: auto;
     margin: 20px;
   }
-  #sec2 > nav > ul{
+  #sec2 > nav > ul {
     flex-direction: column;
     gap: 10px;
   }
-  #form-contact{
+  #form-contact {
     font-size: 14px;
   }
-  form > div > p > input{
+  form > div > p > input {
     width: 170px;
   }
-  .field-contact > fieldset{
+  .field-contact > fieldset {
     display: flex;
     flex-direction: row;
   }
-  .field-contact > fieldset > div{
+  .field-contact > fieldset > div {
     display: flex;
     flex-direction: column;
   }
-  #message{
+  #message {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #message-id{
+  #message-id {
     transform: scale(1.5, 0.8);
     border: groove rgb(255, 0, 0);
     border-radius: 8px;
     outline: none;
   }
-  #envoyer{
+  #envoyer {
     display: flex;
     flex-direction: column;
     align-items: end;
     margin-top: 10px;
   }
-  #envoyer > button{
+  #envoyer > button {
     background-color: #bc8e8d;
     border: 2px solid #ee1b0c;
     border-radius: 10px;
     cursor: pointer;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     transition-duration: 0.3s;
     font-family: "Sancreek", serif;
   }
-  #envoyer > button:hover{
+  #envoyer > button:hover {
     background-color: #bc8e8d60;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
     border: 2px outset #ee1b0c;
   }
 }
